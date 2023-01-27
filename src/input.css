@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.notshow {
+ opacity: 0;
+  transition: all 1s ease-out;
+  transform: translate3d(0, 2rem, 0);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+overflow: overlay;
+position: relative;
+}
+.notshow.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #929292;
+}
