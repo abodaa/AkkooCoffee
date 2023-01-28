@@ -39,3 +39,69 @@ position: relative;
 ::-webkit-scrollbar-thumb:hover {
   background: #929292;
 }
+
+/* Gallery */
+.img-list {
+display: flex;
+flex-wrap: wrap;
+}
+.img-list li {
+border: 5px solid transparent;
+box-sizing: border-box;
+width: 33%;
+border-radius: 10px;
+position: relative;
+cursor: pointer;
+}
+.img-list img {
+max-width: 100%;
+vertical-align: middle;
+}
+
+
+
+/* The hover effect
+-------------------------------------------------------------- */
+.img-list li:before {
+transition: all .5s ease;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #333;
+transform: scale(0);
+border-radius: 10px;
+
+}
+.img-list li:hover:before {
+opacity: .5;
+transform: scale(1);
+border-radius: 10px;
+
+}
+.img-list li:after {
+transition: all .6s ease .2s;
+content: "";
+position: absolute;
+top: 8px;
+left: 8px;
+right: 8px;
+bottom: 8px;
+border: 1px solid #aaa;
+background: #000;
+opacity: 0;
+transform: scale(0);
+border-radius: 10px;
+
+}
+.img-list li:hover:after {
+opacity: .35;
+transform: scale(1);
+border-radius: 10px;
+
+}
+.imgs{
+  border-radius: 10px;
+}

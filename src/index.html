@@ -8,36 +8,43 @@
   </head>
   <body>
     <ul
-      class="text-white bg-darkCoffee py-12 hidden items-center fixed md:flex flex-col justify-between space-y-16 top-0 z-20"
+      class="text-white bg-green py-12 hidden items-center fixed md:flex flex-col justify-between space-y-16 top-0 z-20"
     >
+      <a class="origin-bottom -rotate-90" href="#home">Home</a>
+
       <a class="origin-bottom -rotate-90" href="#about">About Us</a>
-      <a class="origin-bottom -rotate-90" href="#">Comunity</a>
-      <a class="origin-bottom -rotate-90" href="#">Location</a>
       <a class="origin-bottom -rotate-90" href="#services">Services</a>
+      <a class="origin-bottom -rotate-90" href="#community">Comunity</a>
+      <a class="origin-bottom -rotate-90" href="#gallery">Gallery</a>
     </ul>
-    <nav class="relative mx-auto p-3">
-      <div class="md:flex items-center justify-around sm:flex">
+    <nav id="home" class="shadow-lg relative mx-auto p-3">
+      <div class="md:flex items-center  justify-around sm:flex">
         <img
           src="../image/Akkoo+logo.jpg"
           alt=""
-          class="w-32 md:w-40 hover:opacity-0"
+          class="w-32 md:w-60 rounded-xl"
         />
 
-        <ul class="absolute right-24">
+        <div class=" flex items-center space-x-16">
           <a
-            class="bg-lightCoffee px-4 py-2 rounded-full text-white hover:opacity-80 hover:text-yellow"
-            href="#"
-            >Akkoo Menu</a
-          >
+            class="bg-green px-4 py-2 rounded-full text-white hover:opacity-80 "
+            href="#akkoomenu"
+            >Akkoo Menu</a>
+<div class="flex items-center space-x-3"><img src="../image/mobile.png" class="w-8" alt="">
+          <a href="tel:6031112298">(+251)-905-828282</a></div>
+    
+        </div>
+       <div class="flex items-center space-x-3">
+<img src="../image/facebook (3).png" class="w-8 cursor-pointer hover:scale-110 transition 5s" alt="">
+       <img src="../image/instagram (3).png" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
+       <img src="../image/twitter (1).png" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
 
-          <a href="tel:6031112298">(+251)-905-828282</a>
-        </ul>
-        <ul></ul>
+       </div>
       </div>
     </nav>
 <!-- Section One -->
 
-    <section id="home" class="mt-11 container flex items-center mx-auto justify-center">
+    <section id="home" style="background-image: url('../image/herobg.png');" class="mt-11 container flex items-center mx-auto justify-center bg-contain bg-no-repeat  ">
       <div class="flex pl-36 flex-col w-2/4 space-y-5">
         <div>
           <h1 class="text-6xl font-bold">Welcome to</h1>
@@ -134,9 +141,7 @@
             <p class=" mb-4">Our Services</p>
             <h1 class=" text-3xl font-bold">What makes Akkoo unique?</h1>
           <h1 class=" text-3xl font-bold mb-3">We keep things interesting.</h1>
-          <p class=" mb-24 w-1/2 ">After tasting our fine coffee and eating our selection of 
-        delicious traditional foods, we don’t doubt you’ll come again to become
-         a loyal customer.</p>
+          <p class=" mb-24 w-1/2 ">Akkoo has the best catering service should you choose to have delicious local cusine and Ethiopian coffee at your event. Our ‘Agelgil’ is the most famous order and customers have enjoyed both our fasting and non-fasting orders. Delivered to you in a beautiful Mesob, we have options suitable for your guest size starting from 10 people.</p>
           </div>
       
       <!-- <div class="w-72  mb-28 bg-darkGray opacity-20 ml-16 h-1"></div> -->
@@ -202,7 +207,7 @@
 
     <!-- Section Five -->
 
-<section class="container mx-auto pt-16">
+<section id="akkoomenu" class="container mx-auto pt-10">
     <div class="ml-16 mb-12">
         <h1 class=" mb-5 ">Our Menu</h1>
     <h1 class="text-3xl font-bold mb-3">We keep things interesting.</h1>
@@ -220,7 +225,7 @@
 
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">COFFEE </h1> 
+            <h1 class="text-2xl  font-bold">COFFEE </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -228,7 +233,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">ESPRESSO AMERICANO </h1> 
+            <h1 class="text-2xl  font-bold">ESPRESSO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -236,7 +241,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">CAFFÈ LATTE </h1> 
+            <h1 class="text-2xl  font-bold">CAFFÈ LATTE </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -244,7 +249,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">CAPPUCCINO </h1> 
+            <h1 class="text-2xl  font-bold">CAPPUCCINO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -252,7 +257,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">AFFOGATO </h1> 
+            <h1 class="text-2xl  font-bold">MACCHIATO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -260,7 +265,7 @@
           </div>
 
       </div>
-      <img src="../image/cup.jpg" class="w-1/4 rounded-r-xl" alt="">
+      <img src="../image/cup.jpg" class="w-1/4  rounded-r-xl " alt="">
 
     </div>
 
@@ -269,7 +274,7 @@
 <section class="container mx-auto pt-16">
    
     <div class="relative flex justify-center ">
-      <img src="../image/cup.jpg" class="w-1/4 rounded-l-xl" alt="">
+      <img src="../image/traditional.jpg" class="w-1/4 rounded-l-xl" alt="">
 
       <!-- <h1 class="text-4xl  font-bold -rotate-90  absolute right-1/3 top-56 bg-lightCoffee  p-6 text-white rounded-xl ">AKKOO MENU</h1> -->
       <div class="relative rounded-r-xl p-6 flex w-2/4 flex-col justify-around bg-darkCoffee">
@@ -277,7 +282,7 @@
 
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">COFFEE </h1> 
+            <h1 class="text-2xl  font-bold">COFFEE </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -285,7 +290,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">ESPRESSO AMERICANO </h1> 
+            <h1 class="text-2xl  font-bold">ESPRESSO AMERICANO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -293,7 +298,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">CAFFÈ LATTE </h1> 
+            <h1 class="text-2xl  font-bold">CAFFÈ LATTE </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -301,7 +306,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">CAPPUCCINO </h1> 
+            <h1 class="text-2xl  font-bold">CAPPUCCINO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -309,7 +314,7 @@
           </div>
           <div>
               <div class=" flex items-center justify-start space-x-4 ml-6  text-white ">
-            <h1 class="text-4xl  font-bold">AFFOGATO </h1> 
+            <h1 class="text-2xl  font-bold">AFFOGATO </h1> 
             <p class="text-lightGray">ETB 30</p>
           </div>
           <p class="ml-6 text-lightGray">Lorem ipsum dolor sit, amet consectetur.</p>
@@ -321,6 +326,140 @@
     </div>
 
 </section>
+    <!-- Section Seven -->
+
+<section
+    id="community"
+      class="  rounded-t-3xl flex relative  bg-white pt-40 justify-evenly items-center mx-auto"
+    >
+<img
+        class="notshow right-36  ml-16 w-1/4 rounded-lg"
+        src="../image/akkoointerior.jpg"
+        alt=""
+      />
+    
+      <div class="rounded-xl p-6 flex flex-col w-2/4 space-y-5">
+        <p class="notshow">Our Community</p>
+        <div>
+          <h1 class="notshow text-2xl font-bold">Every purchase of coffee at AKKOO positively impacts  </h1>
+          <h1 class=" notshow text-2xl font-bold">social and environmental conditions at the source.</h1>
+        </div>
+        <div>
+          <p class="notshow">
+            AKKOO sources its coffee from west Ethiopia, specifically
+             from Wellega zone Gedame wereda in Oromia region.
+              It’s through the relationships we build with the local 
+              community that some of the finest coffee in the world has
+               been brought to AKKOO. We are proud to say that we give back
+                to the community that grows our coffee as part of our social 
+                entrepreneurship program via projects that range from education, 
+                training, financial support and community building. Seeing the 
+                impact of our efforts, we have adopted a set of standards we
+                 abide by to benefit both the community that grows our coffee 
+                 and the one who drinks it. We are dedicated to providing the 
+                 finest coffee that is sourced, roasted and brewed with intention.
+                  
+          </p>
+          <button class=" notshow bg-darkCoffee text-white p-4 px-10 mt-5 rounded-lg">
+            Learn More
+          </button>
+        </div>
+      </div>
+      
+
+      <div></div>
+    </section>
+
+    <!-- Section Eight -->
+    <section class="overflow-x-hidden pt-14 pb-16">
+      <!-- <div class="container ml-28 mx-auto mb-12">
+    <h1 class="text-3xl font-bold mb-3">Meet the Team</h1>
+          <p class="w-1/2 ">One of our clubs is the retired 
+            elders club. If you are member, you are subjected to a 50% discount to our hot drinks and meals.
+Ready to get started with Coffee club?</p> -->
+
+      
+    </div>
+
+    <!-- <div class="flex container mx-auto justify-evenly ">
+      <div class="flex flex-col w-1/5 items-center justify-center text-center space-y-3 l">
+        <img src="../image/woman.png" alt="" class="w-1/2 rounded-full shadow-lg ">
+        <div class="shadow-md rounded-xl p-4">
+          <h2 class="text-2xl">Tigest</h2>
+        <h3 class="text-1xl w-full font-bold">Operations Manager</h3>
+        <q>Essentially my job is to keep AKKOO running like a well-oiled
+              machine and I pour my heart and soul into doing just that. I have
+               a shirt that says, “Keep calm and let TG handle it!” At AKKOO</q>
+        </div>
+      </div>
+       <div class="flex flex-col w-1/5 items-center justify-center text-center space-y-3 l">
+        <img src="../image/avatar.png" alt="" class="w-1/2 rounded-full shadow-lg ">
+        <div class="shadow-md rounded-xl p-4">
+          <h2 class="text-2xl">Fitsum</h2>
+        <h3 class="text-1xl w-full font-bold">Administrative & Finance Head</h3>
+        <q>Ever since AKKOO Coffee opened, I went back to drinking coffee and 
+           Macchiato. I was taken aback, almost left speechless, by
+           how wonderful the coffee is! I am happy to be enjoying black coffee again.</q>
+        </div>
+      </div>
+       <div class="flex flex-col w-1/5 items-center justify-center text-center space-y-3 l">
+        <img src="../image/woman.png" alt="" class="w-1/2 rounded-full shadow-lg  ">
+        <div class="shadow-md rounded-xl p-4">
+          <h2 class="text-2xl">Kidi</h2>
+        <h3 class="text-1xl w-full font-bold">Purchasing </h3>
+        <q>I love tea – especially with cinnamon. Here at Akkoo we know how to
+           make great tea, cinnamon spiced, lemon squeezed or a simple black tea,
+            I have no doubt you’ll enjoy it. </q>
+        </div>
+      </div>
+       <div class="flex flex-col w-1/5 items-center justify-center text-center space-y-3 l">
+        <img src="../image/avatar.png" alt="" class="w-1/2 rounded-full shadow-lg ">
+        <div class="shadow-md rounded-xl p-4">
+          <h2 class="text-2xl">Abi</h2>
+        <h3 class="text-1xl w-full font-bold">Baresta </h3>
+        <q>I drink coffee because each cup is an experience full
+           of new aromas and flavors that change depending on my
+            coffee selection and the brewing method.I also enjoy how coffee impacts lives</q>
+        </div>
+      </div>
+       
+    </div> -->
+    </section>
+
+
+    <!-- Section Nine -->
+    <section id="gallery" class="container relative w-10/12 mx-auto pt-6">
+     <div class="pl-3 mb-12">
+        <h1 class=" mb-5 ">Our Gallery</h1>
+    <h1 class="text-3xl font-bold mb-3">We keep things interesting.</h1>
+          <p class="w-1/2 ">After tasting our fine coffee and eating our selection of 
+        delicious traditional foods, we don’t doubt you’ll come again to become
+         a loyal customer.</p>
+
+      
+    </div>
+      <ul class="img-list">
+  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/009.jpg"></li>
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/010.jpg"></li>
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/012.jpg"></li>
+  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/015.jpg"></li>
+  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/038.jpg"></li>
+  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/044.jpg"></li>
+</ul>
+
+
+
+    </section>
+
+
+    <!-- Section Ten -->
+    <section id="testimonials" class="">
+
+
+    </section>
 
     <!-- <section
       class="text-white md:flex justify-evenly p-8 my-1 bg-darkCoffee m-auto"
@@ -353,5 +492,18 @@
         />
       </div>
     </section> -->
+
+
+     <!-- Section Twelve -->
+    <section id="footer" class=" w-full bg-darkCoffee mt-12">
+      <div class="flex">
+       <div class="flex flex-col">
+        <h2>Book a Table</h2>
+       </div>
+
+
+      </div>
+
+    </section>
   </body>
 </html>
