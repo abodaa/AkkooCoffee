@@ -16,6 +16,7 @@ module.exports = {
       green: "#006400",
       lightGray: "#dedede",
       darkGray: "#615B62",
+      orange: "#ffa500",
     },
     extend: {},
   },

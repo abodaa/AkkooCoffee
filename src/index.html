@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/main.css" rel="stylesheet" />
+
+    <script>
+      function openForm() {
+        document.getElementById("popup").style.display = "flex";
+      }
+      function closeForm() {
+        document.getElementById("popup").style.display = "none";
+      }
+      function openCommunity() {
+        document.getElementById("community").style.display = "flex";
+      }
+      function closeCommunity() {
+        document.getElementById("community").style.display = "none";
+      }
+    </script>
+
     <script src="./index.js" defer></script>
+    
   </head>
   <body>
     <ul
-      class="text-white bg-green py-12 hidden items-center fixed md:flex flex-col justify-between space-y-16 top-0 z-20"
+      class="text-white rounded-br-xl bg-green py-12 hidden items-center fixed md:flex flex-col justify-between space-y-16 top-0 z-20"
     >
       <a class="origin-bottom -rotate-90" href="#home">Home</a>
 
@@ -26,18 +43,20 @@
         />
 
         <div class=" flex items-center space-x-16">
-          <a
-            class="bg-green px-4 py-2 rounded-full text-white hover:opacity-80 "
-            href="#akkoomenu"
-            >Akkoo Menu</a>
+          
+
+       <div class="flex items-center space-x-3">
 <div class="flex items-center space-x-3"><img src="../image/mobile.png" class="w-8" alt="">
           <a href="tel:6031112298">(+251)-905-828282</a></div>
     
         </div>
-       <div class="flex items-center space-x-3">
-<img src="../image/facebook (3).png" class="w-8 cursor-pointer hover:scale-110 transition 5s" alt="">
+<div class="flex items-center space-x-3">
+
+  <img src="../image/facebook (3).png" class="w-8 cursor-pointer hover:scale-110 transition 5s" alt="">
        <img src="../image/instagram (3).png" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
-       <img src="../image/twitter (1).png" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
+       <img src="../image/twitter (2).png" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
+</div>
+
 
        </div>
       </div>
@@ -59,8 +78,19 @@
             loyal customer.
           </p>
         </div>
+         <div class="flex items-center space-x-5">
+          <a
+            class="bg-green px-4 py-2 rounded-full text-white hover:opacity-80 "
+            href="#akkoomenu"
+            >Akkoo Menu</a>
+              <a href="#about">
+
+  <img src="../image/down-arrow.png" class="w-8 animate-bounce">
+
+</a>
+         </div>
       </div>
-      <img class="w-2/4 rounded-lg" src="../image/AkkooHero.jpg" alt="" />
+      <img class="w-2/4 rounded-lg" src="../image/chimaki.jpg" alt="" />
     </section>
 
 
@@ -70,7 +100,7 @@
     <section
       class="flex relative  text-white py-36 bg-darkCoffee justify-around items-center mt-32 mx-auto"
     >
-      <img class="w-1/4 rounded-lg" src="../image/akkoounderhero.jpg" alt="" />
+      <img class="w-1/4 rounded-lg" src="../image/about.jpg" alt="" />
 
       <div
         class="absolute rounded-xl right-36 p-6 flex pl-36 flex-col w-2/4 space-y-5 bg-lightCoffee z-10"
@@ -91,7 +121,7 @@
             to serve you just as you’d be served at your grandmother’s (AKKOO)
             home.
           </p>
-          <button class="bg-white text-darkCoffee p-4 px-10 mt-5 rounded-lg">
+          <button  class="bg-white text-darkCoffee p-4 px-10 mt-5 rounded-lg">
             Book Now
           </button>
         </div>
@@ -121,7 +151,7 @@
             to serve you just as you’d be served at your grandmother’s (AKKOO)
             home.
           </p>
-          <button class=" notshow bg-darkCoffee text-white p-4 px-10 mt-5 rounded-lg">
+          <button onclick="openForm()" class=" notshow bg-darkCoffee text-white p-4 px-10 mt-5 rounded-lg">
             More About Us
           </button>
         </div>
@@ -329,7 +359,7 @@
     <!-- Section Seven -->
 
 <section
-    id="community"
+    
       class="  rounded-t-3xl flex relative  bg-white pt-40 justify-evenly items-center mx-auto"
     >
 <img
@@ -360,7 +390,7 @@
                  finest coffee that is sourced, roasted and brewed with intention.
                   
           </p>
-          <button class=" notshow bg-darkCoffee text-white p-4 px-10 mt-5 rounded-lg">
+          <button onclick="openCommunity()" class=" notshow bg-darkCoffee text-white p-4 px-10 mt-5 rounded-lg">
             Learn More
           </button>
         </div>
@@ -461,49 +491,175 @@ Ready to get started with Coffee club?</p> -->
 
     </section>
 
-    <!-- <section
-      class="text-white md:flex justify-evenly p-8 my-1 bg-darkCoffee m-auto"
-    >
-      <div class="flex items-center gap-5 border p-5 rounded-full">
-        <img src="../image/phone.png" alt="" class="w-10 md:w-14 lg:w-16" />
-        <div class="flex-col items-center md:text-sm sm:text-xs">
-          <p>Opening Hours</p>
-          <p>24 hours a day 7 days a week.</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-5 border p-5 rounded-full">
-        <img
-          src="../image/destination.png"
-          alt=""
-          class="w-10 md:w-14 lg:w-16"
-        />
-        <div class="flex-col items-center md:text-sm sm:text-xs">
-          <p>Churchill Road, Pass Tedros Square</p>
-          <p>Hibret Insurance Building, Ground Floor, Addis Ababa</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-5">
-        <img src="../image/facebook.png" alt="" class="w-10 md:w-10 lg:w-10" />
-        <img src="../image/instagram.png" alt="" class="w-10 md:w-10 lg:w-10" />
-        <img
-          src="../image/tripadvisor.png"
-          alt=""
-          class="w-10 md:w-10 lg:w-10 bg-white rounded-full p-1"
-        />
-      </div>
-    </section> -->
+    <section class="bg-green m-auto rounded-t-xl mt-10" >
+        
 
+     <div class="text-white md:flex justify-evenly p-8 my-1 ">
+         <div class="flex items-start">
+        <div class="flex-col items-center md:text-lg space-y-3 sm:text-xs">
+          <p class="text-orange">Book a Table</p>
 
-     <!-- Section Twelve -->
-    <section id="footer" class=" w-full bg-darkCoffee mt-12">
-      <div class="flex">
-       <div class="flex flex-col">
-        <h2>Book a Table</h2>
+          <p class="text-3xl font-bold">(+251)-905-828282</p>
+          <p>book@akkoocoffee.com</p>
+          <div class="flex items-center space-x-3">
+            
+              <img src="../image/facebook.svg" class="w-8 cursor-pointer hover:scale-110 transition 5s" alt="">
+       <img src="../image/instagram.svg" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
+       <img src="../image/twitter.svg" class="w-8 cursor-pointer hover:scale-110 transition 5" alt="">
+
        </div>
+        </div>
+      </div>
+       
 
+       <div class="flex items-start">
+        <div class="flex-col items-center md:text-lg space-y-3 sm:text-xs">
+          <p class="text-orange">Opening Hours</p>
 
+          <p class="text-lg font-bold">Monday - Friday</p>
+          <p class="text-sm">We are open 24 hours</p>
+          <p class="text-lg font-bold">Saturday - Sunday</p>
+          <p class="text-sm">We are open 24 hours</p>
+        </div>
       </div>
 
+
+      <div class="flex items-start">
+        <div class="flex-col items-center md:text-lg space-y-3 sm:text-xs">
+          <p class="text-orange">Our Address</p>
+
+          <p class="text-lg font-bold">#1 Hibret Branch</p>
+          <p class="text-sm">Churchill Road, Pass Tedros Square,</p>
+          <p class="text-sm">Hibret Insurance Building, Ground Floor, Addis Ababa.</p>
+
+          <!-- <p class="text-lg font-bold">#2 Post Branch</p>
+          <p class="text-sm">Churchill Road, General Post Office Building, </p>
+          <p class="text-sm">Ground Floor, Addis Ababa. </p> -->
+
+          <p class="text-lg font-bold">#2 Milkomi Branch</p>
+          <p class="text-sm">In front of Bole Medhanialem Church, pass Berhane Adere Building,</p>
+          <p class="text-sm">on Ground Floor of Milkomi Building, Addis Ababa.</p>
+            
+        </div>
+      </div>
+
+
+
+     </div>
+
+    <div class="w-full bg-darkCoffee pt-10">
+        <img
+          src="../image/logo footer.png"
+          alt=""
+          class="w-32 md:w-96 rounded-xl mx-auto"
+        />
+<div class="text-center py-8 text-white">© 2023 Akkoo Coffee | Website by <a class="text-lg text-orange" target="blank" href="https://abraham-b.netlify.app">Abraham</a> </div>      
     </section>
+
+<a href="#home">
+
+  <img src="../image/arrowup.png" class="absolute right-6 bottom-6 w-8 animate-bounce">
+
+</a>
+
+
+    </div>
+<!-- More about Us -->
+<section id="popup" class="fixed hidden  top-0 z-50 overflow-y-scroll items-start  justify-center h-screen">
+  <div class="flex relative p-12 w-3/4 flex-col shadow-xl bg-white ">
+<img onclick="closeForm()" src="../image/close.png" class="cursor-pointer absolute top-10 right-5 w-10" alt="">
+
+<div class="notshow flex  space-x-9 items-center ">
+  <img src="../image/family.jpg" class="w-1/2 rounded-xl" alt="">
+  <p class="text-3xl font-bold">Akkoo’ is a word in the Afaan Oromoo language (one of the widely spoken languages in Ethiopia) meaning ‘Grandmother’. </p>
+
+
+</div>
+    <p class="notshow text-3xl mt-4 font-bold">Our Story</p>
+    
+<p class="notshow mt-6">The connotation of Akkoo goes beyond the mere word 'grandma'.
+   It resonates with deep love, care, hospitality, and proficiency. 
+   I believe sharing the story of my mother, Elisabeth Kitessa Guma,
+    who is lovingly called 'Akkoo' by her 23 grandchildren, would put
+     flesh and bone to these attributes.Elisabeth was born on October 8, 1940,
+      in the then province of Wollega, Kelem District, Gidame Woreda, in a specific
+       village called Buri. She lost her parents at an early age and was brought to
+        Addis Ababa by her aunt, who is also a respected mother of multitudes, Yeshemebet
+         Guma. She got her education at the then American Mission School. After completing
+          her education Elisabeth married Hailu Diglu in May 1964 and lived happily married
+           to him for 38 years. They raised eight children: five daughters and three sons.
+            After losing her husband, she persisted resiliently and lived another 17 years. 
+            Hers was a fruitful and exemplary life!</p>
+
+
+     <p class="notshow mt-6">Akkoo’s life is characterized by love. Her home is wide open to receive people.
+       It is a place where many come to eat, fellowship, receive counsel, get encouragement,
+        and experience her graceful generosity. Visitors are graced not only with the words of
+         her blessings and prayer but also with sprays of fragrance from her perfumes. Her presence
+          had an undeniable soothing and comforting strength. People may come to her burdened, saddened,
+           and confused. She would listen with a caring heart and ease their burden. Her special touch
+            would bring encouragement. Her words built up and strengthened the feeble. Her humble 
+            approach had healing power to penetrate a broken heart. 
+Wherever she went, her eyes would always keep a lookout for the needy in all aspects: physically,
+ emotionally, and spiritually. Her hands were ready to stretch to bring solutions. She was ever
+  willing and ready to stand between the gaps in people’s lives. She had a way to conceal her good
+   deeds and would never show it off. Whenever people tried to take advantage of her, she consciously
+    allowed it — for the time being. She had quiet wisdom to put things back in order.</p>
+<p class="mt-6 notshow">
+Akkoo Coffee not only wants to take the name with which her grandchildren called Elisabeth, 
+but also aspires to adopt many of her life principles into our mission, culture, and operation. 
+We want Akkoo Coffee to be a place where people connect, communicate, discuss, fellowship, and have 
+fun! With the proficiency of Akkoo’s culinary experience, we want people to enjoy the best of coffee
+ and our selection of delicious national dishes. We want the warmth and hospitality to be enjoyed by
+  our customers. We are also dedicated to our corporate social responsibility to play a role in addressing
+   holistic human needs. In such ways and more, Akkoo lives to honor Elisabeth Kitessa Guma’s legacy.</p>      
+   
+
+
+   <p class="notshow text-3xl mt-4 font-bold">About us</p>
+    
+<p class="notshow mt-6">Our commitment is to bring you the ultimate coffee
+   experience, one that is responsibly produced from seed to cup.
+    This is not merely an ideology but our everyday practice. It was
+     on May 2019 AKKOO coffee’s founders Dawit Hailu and his wife Wudassie
+      Enquberhan opened their first coffee shop down the street from Churchill
+       road. Upon its opening, Akkoo was welcomed with encouraging responses from the
+        community. It quickly became the meeting place for coffee lovers ranging from
+         university students to retirees. Besides our fine coffee, customers also enjo
+          our baked goods as well as our healthy and delicious meals. Many also admire 
+          the design and overall atmosphere of the place. </p>
+
+
+     <p class="notshow mt-6">The main approach of the AKKOO Coffee’s design is to communicate
+       two concepts to the customer: ‘Home in Ethiopia’ and ‘straight from our farm to 
+       your cup.’ The first idea in our concept, ‘home in Ethiopia’, is represented by 
+       our elegant shop design: representing the birthplace and origins of original Ethiopian 
+       coffeehouse culture intended for areas with a more conservative and higher-income customer
+        base. Our cooler and trendier design line ‘straight from our farm to your cup’, is intended
+         for a younger, slightly more progressive crowd. This slogan also represents one of our core
+          principles: to guarantee the highest quality at every step of our value chain through sustainable, 
+          trustworthy and respectful partnership with our farmers in the coffee-growing countries.</p>   
+   
+  </div>
+</section>
+
+<!-- Book a table pop up -->
+
+<section id="community"  class="fixed hidden  top-0 z-50 overflow-y-scroll items-start  justify-center h-screen">
+  <div class="flex relative p-12 w-3/4 flex-col shadow-xl bg-white ">
+<img onclick="closeCommunity()"  src="../image/close.png" class="cursor-pointer absolute top-10 right-5 w-10" alt="">
+
+<div class="notshow flex  space-x-9 items-center ">
+  
+  <p class="text-3xl font-bold">Akkoo’ is a word in the Afaan Oromoo language (one of the widely spoken languages in Ethiopia) meaning ‘Grandmother’. </p>
+
+</div>
+  </div>
+</section>
+
   </body>
 </html>
+
+
+
+       
