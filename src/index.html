@@ -8,16 +8,63 @@
     <script>
       function openForm() {
         document.getElementById("popup").style.display = "flex";
+
       }
       function closeForm() {
         document.getElementById("popup").style.display = "none";
       }
       function openCommunity() {
-        document.getElementById("community").style.display = "flex";
+        document.getElementById("learnmore").style.display = "flex";
       }
       function closeCommunity() {
-        document.getElementById("community").style.display = "none";
+        document.getElementById("learnmore").style.display = "none";
       }
+
+      function bookTable() {
+        document.getElementById("book").style.display = "flex";
+      }
+      function closeBookTable() {
+        document.getElementById("book").style.display = "none";
+      }
+
+      // gallery slider
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
     </script>
 
     <script src="./index.js" defer></script>
@@ -121,7 +168,7 @@
             to serve you just as you’d be served at your grandmother’s (AKKOO)
             home.
           </p>
-          <button  class="bg-white text-darkCoffee p-4 px-10 mt-5 rounded-lg">
+          <button onclick="bookTable()"  class="bg-white text-darkCoffee p-4 px-10 mt-5 rounded-lg">
             Book Now
           </button>
         </div>
@@ -359,7 +406,7 @@
     <!-- Section Seven -->
 
 <section
-    
+    id="community"
       class="  rounded-t-3xl flex relative  bg-white pt-40 justify-evenly items-center mx-auto"
     >
 <img
@@ -468,17 +515,7 @@ Ready to get started with Coffee club?</p> -->
 
       
     </div>
-      <ul class="img-list">
-  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/009.jpg"></li>
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/010.jpg"></li>
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/012.jpg"></li>
-  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/015.jpg"></li>
-  <!-- <li><span class="img-placeholder">- placeholder -</span></li> -->
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/038.jpg"></li>
-  <li><img class="imgs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/044.jpg"></li>
-</ul>
+      
 
 
 
@@ -486,10 +523,91 @@ Ready to get started with Coffee club?</p> -->
 
 
     <!-- Section Ten -->
-    <section id="testimonials" class="">
+      <div class="img-list px-2 w-11/12 mx-auto">
+        <img class="imgs hover:opacity-90" src="../image/1.jpg" onclick="openModal();currentSlide(1)">
+        <img class="imgs hover:opacity-90" src="../image/2.jpg" onclick="openModal();currentSlide(2)">
+        <img class="imgs hover:opacity-90" src="../image/3.jpg" onclick="openModal();currentSlide(3)">
+        <img class="imgs hover:opacity-90" src="../image/4.jpg" onclick="openModal();currentSlide(4)">
+        <img class="imgs hover:opacity-90" src="../image/5.jpg" onclick="openModal();currentSlide(5)">
+        <img class="imgs hover:opacity-90" src="../image/6.jpg" onclick="openModal();currentSlide(6)">
+
+        <!-- <img class="imgs" src="../image/7.jpg">
+        <img class="imgs" src="../image/6.jpg">
+        <img class="imgs" src="../image/5.jpg">
+        <img class="imgs" src="../image/4.jpg">
+        <img class="imgs" src="../image/3.jpg">
+        <img class="imgs" src="../image/2.jpg">
+        <img class="imgs" src="../image/1.jpg"> -->
+
+      </div>
+
+      <!-- Modal  -->
 
 
-    </section>
+      <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="../image/1.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="../image/2.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="../image/3.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="../image/4.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="../image/5.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="../image/6.jpg" class="rounded-t-xl" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+
+   <!-- <div class="flex items-center px-6 flex-wrap space-x-3 w-11/12">
+
+     <div class="column">
+      <img class="demo rounded-xl  mt-2 cursor" src="../image/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor rounded-xl  mt-2  " src="../image/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor rounded-xl  mt-2  " src="../image/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor rounded-xl  mt-2  " src="../image/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor rounded-xl  mt-2  " src="../image/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor rounded-xl  mt-2 " src="../image/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
+   </div> -->
+  </div>
+</div>
+
 
     <section class="bg-green m-auto rounded-t-xl mt-10" >
         
@@ -643,17 +761,132 @@ fun! With the proficiency of Akkoo’s culinary experience, we want people to en
   </div>
 </section>
 
-<!-- Book a table pop up -->
+<!-- Learn More community -->
 
-<section id="community"  class="fixed hidden  top-0 z-50 overflow-y-scroll items-start  justify-center h-screen">
+<section id="learnmore"  class="fixed  hidden top-0 z-50 overflow-y-scroll items-start  justify-center h-screen">
   <div class="flex relative p-12 w-3/4 flex-col shadow-xl bg-white ">
 <img onclick="closeCommunity()"  src="../image/close.png" class="cursor-pointer absolute top-10 right-5 w-10" alt="">
 
-<div class="notshow flex  space-x-9 items-center ">
+<div class="notshow flex-col justify-center  space-y-9 items-center ">
   
-  <p class="text-3xl font-bold">Akkoo’ is a word in the Afaan Oromoo language (one of the widely spoken languages in Ethiopia) meaning ‘Grandmother’. </p>
+  <p class="text-3xl font-bold">Every purchase of coffee at AKKOO positively impacts social and environmental conditions at the source.</p>
+<p>AKKOO sources its coffee from west Ethiopia, specifically
+   from Wellega zone Gedame wereda in Oromia region. It’s
+    through the relationships we build with the local
+     community that some of the finest coffee in the world
+      has been brought to AKKOO. We are proud to say that
+       we give back to the community that grows our coffee as
+        part of our social entrepreneurship program via projects
+         that range from education, training, financial support
+          and community building. Seeing the impact of our efforts, 
+          we have adopted a set of standards we abide by to benefit
+           both the community that grows our coffee and the one who
+            drinks it. We are dedicated to providing the finest coffee
+             that is sourced, roasted and brewed with intention. As Akkoo
+              Coffee grows, we continue to uphold the standards that have
+               sustained our business over the years. Dawit and Wudassie 
+               enjoys being ‘flame keepers’ by searching for the best flavors
+                and aromas from organic and mystical seeds from distinct coffee places.
+                 ‘We should go out for coffee’ invites a conversation that leads to a relationship. 
+                 The world of coffee has not only opened the door to experiencing an excellent world-wide
+                  drink but also contributed to friendships turning to best ones, dreams becoming a
+                   reality and so much more. At AKKOO Coffee we look forward to sharing these intricacies
+                    of the coffee tasting world with you! Currently, my favorite coffee is our Macchiattoo.
+                     I urge you to try it!’</p>
+
+                     <div>
+                        <div class="flex items-center space-x-4">
+                        <img src="../image/Care.png" class="w-16" alt="">
+                        <p>5% net of your purchases go to projects funding education, 
+                          healthcare and fresh water supplies in Western Ethiopia.</p>
+
+                     </div>
+                     <div class="flex items-center space-x-4">
+                        <img src="../image/community.png" class="w-16" alt="">
+                        <div class="flex-col">
+                            <p class="text-2xl font-bold">Akkoo Coffee Club </p>
+                            <p>One of our clubs is the retired elders club. If you are member,
+                               you are subjected to a 50% discount to our hot drinks and meals.</p>
+                               <p class="font-bold">Ready to get started with Coffee club?</p>
+                               <p class="">Meet the team!</p>
+
+                        </div>
+
+                     </div>
+
+                     </div>
+
+                     <!-- <p class="w-48 pb-2  text-2xl font-bold border-b-4" >Meet the Team</p> -->
+
+                     <div class="flex">
+                          <div class="flex flex-col space-y-3 items-center">
+                              <img src="../image/woman.png" class="w-1/2" alt="">
+                              <p class="text-2xl font-bold">Tigest</p>
+                              <p>Operations Manager</p>
+
+                          </div>
+                          <div class="flex flex-col space-y-3 items-center">
+                              <img src="../image/man.png" class="w-1/2" alt="">
+                              <p class="text-2xl font-bold">Fitsum</p>
+                              <p>Administrative and Finance Head </p>
+
+                          </div>
+                          <div class="flex flex-col space-y-3 items-center">
+                              <img src="../image/woman.png" class="w-1/2" alt="">
+                              <p class="text-2xl font-bold">Kidi</p>
+                              <p>Purchasing</p>
+
+                          </div>
+                          <div class="flex flex-col space-y-3 items-center">
+                              <img src="../image/man.png" class="w-1/2" alt="">
+                              <p class="text-2xl font-bold">Abi</p>
+                              <p>Baresta</p>
+
+                          </div>
+
+                     </div>
 
 </div>
+  </div>
+</section>
+
+<!-- Book a table -->
+
+<!-- More about Us -->
+<section id="book" class="fixed  hidden top-0 z-50 overflow-y-scroll items-start w-1/2 justify-center h-screen">
+  <div class="flex relative p-12 w-3/4 flex-col shadow-xl bg-white ">
+<img onclick="closeBookTable()" src="../image/close.png" class="cursor-pointer absolute top-10 right-5 w-10" alt="">
+
+<div class="notshow flex flex-col space-y-9 items-start ">
+  <div>
+    <p class="text-xl">We are open 24 hours a day 7 days a week.</p>
+    <p class="text-xl">Call us to book a table or just email to us</p>
+  </div>
+  <div>
+                      
+    
+
+    <div class="flex items-center space-x-4">
+                        <img src="../image/mobile.png" class="w-10" alt="">
+                        <div class="flex-col">
+                            <a href="tel:6031112298" class="text-2xl font-bold">(+251)-905-828282</a>
+                            <p></p>
+
+                        </div>
+
+                     </div>
+                     <div class="flex items-center space-x-4">
+                        <img src="../image/email.png" class="w-10" alt="">
+                        <div class="flex-col">
+                            <p class="text-2xl font-bold">book@akkoocoffee.com</p>
+                            <p></p>
+
+                        </div>
+
+                     </div>
+
+                     </div>
+    
   </div>
 </section>
 
